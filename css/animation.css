@@ -1,0 +1,395 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  background: #fff;
+  padding-top: 20px;
+}
+
+.pagewrap {
+  width: 80%;
+  margin: auto;
+}
+
+svg {
+	margin: auto;
+  display: block;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes appear {
+  /*0% {
+    transform: scale(0);
+  }*/
+  100% {
+    transform: scale(1);
+    stroke: black;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes grow2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+    stroke: black;
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: scale(1.5);
+    transform: rotate(-45deg);
+  }
+  100% {
+    stroke: black;
+    transform: scale(1);
+    transform: rotate(0);
+  }
+}
+
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.badge * {
+  transform-origin: 50% 50%;
+}
+
+.smallbox {
+  fill:white;
+  transform-origin: 50% 50%;
+  z-index: 100;
+  animation: grow 2s 1s ease-out;
+}
+
+.smallbox:hover {
+  fill:white;
+  stroke:black;
+  animation: grow2 2s ease-out forwards;
+  z-index: 100;
+}
+
+
+.inner {
+  stroke: transparent;
+  animation-delay: .1s;
+  transform-origin: 50% 50%;
+  animation: appear 2s 1s ease-out forwards;
+}
+
+.logowrapjs {
+  width: 50%;
+  margin: auto;
+}
+
+.logowrap {
+  width: 250px;
+  float: left;
+  margin: 0px 50px 50px 50px;
+  margin-botton:50px;
+}
+
+
+.drawing {
+  fill:white;
+  stroke:#000000;
+  stroke-width:4.95;
+  stroke-miterlimit:10;
+  transition: all 1s;
+}
+
+.drawing:hover {
+}
+
+/* ------------
+Option 1
+------------ */
+
+
+#largebox {
+  stroke-dasharray: 3925;
+  stroke-dashoffset: 3920;
+  animation: draw 1s linear forwards;
+}
+
+/* ------------
+Option 2
+------------ */
+
+#top {
+  stroke: black;
+  animation: rotate 1s ease-out;
+  transform-origin: 10px 10px;
+}
+
+#right {
+  stroke: black;
+  animation: rotate 1s ease-out;
+  transform-origin: 990px 10px;
+}
+
+#bottom {
+  stroke: black;
+  animation: rotate 1s ease-out;
+  transform-origin: 990px 990px;
+}
+
+#left {
+  stroke: black;
+  animation: rotate 1s ease-out;
+  transform-origin: 10px 990px;
+}
+
+#dia-ul {
+  stroke: transparent;
+  animation: rotate2 1s 1s ease-out forwards;
+  transform-origin: 10px 10px;
+}
+
+#dia-ur {
+  stroke: transparent;
+  animation: rotate2 1s 1s ease-out forwards;
+  transform-origin: 990px 10px;
+}
+
+#dia-lr {
+  stroke: transparent;
+  animation: rotate2 1s 1s ease-out forwards;
+  transform-origin: 990px 990px;
+}
+
+#dia-ll {
+  stroke: transparent;
+  animation: rotate2 1s 1s ease-out forwards;
+  transform-origin: 10px 990px;
+}
+
+@keyframes grow3 {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.smallbox2 {
+  transform: scale(0);
+  animation: grow3 1s 1.5s ease-out forwards;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.smallbox2:hover {
+  fill:white;
+  stroke:black;
+  animation: shrink 2s ease-in;
+}
+
+/* ------------
+Option 2
+------------ */
+
+#top-3,
+#right-3,
+#bottom-3,
+#left-3 {
+  stroke: transparent;
+  animation: rotate 1s 1.5s ease-out forwards;
+}
+
+#top-3 {
+  transform-origin: 10px 10px;
+}
+
+#right-3 {
+  transform-origin: 990px 10px;
+}
+
+#bottom-3 {
+  transform-origin: 990px 990px;
+}
+
+#left-3 {
+  transform-origin: 10px 990px;
+}
+
+@keyframes grow4 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    stroke: black;
+  }
+}
+
+.smallbox3 {
+  animation: grow4 1s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.inner-3 {
+  stroke: transparent;
+  animation: grow4 1s .5s ease-out forwards;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* ------------
+Option 4
+------------ */
+@keyframes shrink2 {
+  0% {
+    transform: scale(0.8);
+    stroke:transparent;
+  }
+
+  100% {
+    transform: scale(1);
+    stroke:black;
+  }
+}
+
+#left-4, #right-4 {
+  animation: shrink2 1s ease-out;
+  transform-origin: 50% 50%;
+}
+
+/* ------------
+Option 5
+------------ */
+@keyframes rotate5 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0);
+    stroke: black;
+  }
+}
+
+#top-5,
+#right-5,
+#bottom-5,
+#left-5 {
+  stroke: transparent;
+  animation: rotate5 1s ease-out forwards;
+}
+
+#top-5 {
+  transform-origin: 10px 10px;
+}
+
+#right-5 {
+  transform-origin: 990px 10px;
+}
+
+#bottom-5 {
+  transform-origin: 990px 990px;
+}
+
+#left-5 {
+  transform-origin: 10px 990px;
+}
+
+/* ------------
+Option 6
+------------ */
+@keyframes rotate5 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0);
+    stroke: black;
+  }
+}
+
+#top-5,
+#right-5,
+#bottom-5,
+#left-5 {
+  stroke: transparent;
+  animation: rotate5 1s ease-out forwards;
+}
+
+#top-5 {
+  transform-origin: 10px 10px;
+}
+
+#right-5 {
+  transform-origin: 990px 10px;
+}
+
+#bottom-5 {
+  transform-origin: 990px 990px;
+}
+
+#left-5 {
+  transform-origin: 10px 990px;
+}

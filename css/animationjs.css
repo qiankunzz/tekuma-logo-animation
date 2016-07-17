@@ -1,0 +1,84 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  background: #fff;
+  padding-top: 20px;
+}
+
+.pagewrap {
+  width: 80%;
+  margin: auto;
+}
+
+svg {
+	margin: auto;
+  display: block;
+}
+
+.logowrapjs {
+  width: 50%;
+  margin: auto;
+  float:left;
+}
+
+.slider {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  float: left;
+}
+
+.slider input{
+  display: block;
+  margin: 20px auto;
+}
+
+
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.badge * {
+  transform-origin: 50% 50%;
+}
+
+#smallbox {
+  stroke-width: 3.5px;
+  transform-origin: 50% 50%;
+}
+
+.inner {
+  animation-delay: .1s;
+  transform-origin: 50% 50%;
+}
+
+.drawing {
+  fill:transparent;
+  stroke:#000000;
+  stroke-width:5px;
+  stroke-miterlimit:10;
+}
+
+#dia-ul, #dia-ur, #dia-ll, #dia-lr {
+  stroke-width:4px;
+  /*transform: scale(2);*/
+}
+
+#dia-ul {
+  transform-origin: 10px 10px;
+}
+
+#dia-ur {
+  transform-origin: 990px 10px;
+}
+
+#dia-ll {
+  transform-origin: 990px 990px;
+}
+
+#dia-lr {
+  transform-origin: 10px 990px;
+}

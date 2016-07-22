@@ -1,0 +1,159 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  background: #fff;
+  padding-top: 20px;
+}
+
+.pagewrap {
+  width: 90%;
+  margin: auto;
+}
+
+svg {
+	margin: auto;
+  display: block;
+}
+
+.logowrapjs {
+  margin-left: 50px;
+  padding-left: 50px;
+  float:left;
+}
+
+.slider {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  float: left;
+  display:block;
+}
+
+.slider input{
+  display: block;
+  margin: 20px auto;
+}
+
+
+.logowrapjs {
+  width: 50%;
+  margin: auto;
+}
+
+.logowrap {
+  width: 250px;
+  float: left;
+  margin: 0px 50px 50px 50px;
+  margin-botton:50px;
+}
+
+
+.drawing {
+  fill:transparent;
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+  transition: all 1s;
+}
+
+#frame {
+  stroke-width:8;
+}
+
+.drawing:hover {
+}
+
+.cls-1, .cls-3, .cls-7 {
+  fill: #fff;
+}
+
+.cls-2, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9 {
+  fill: none;
+}
+
+.cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+  stroke: #000;
+}
+
+.cls-2, .cls-3, .cls-5, .cls-7, .cls-8, .cls-9 {
+  stroke-miterlimit: 10;
+}
+
+.cls-4, .cls-6 {
+  stroke-linejoin: round;
+}
+
+.cls-4, .cls-8 {
+  stroke-width: 0.75px;
+}
+
+.cls-5, .cls-6, .cls-7 {
+  stroke-width: 0.5px;
+}
+
+.cls-9 {
+  stroke-width: 6px;
+}
+
+
+.artwork {
+  float:left;
+}
+
+
+.boxes {
+  height:600px;
+  text-align: center;
+}
+
+.box {
+  list-style-type: none;
+  float: left;
+    background: #EFEFEF;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    }
+
+#art1 {
+  background-image: url(../assets/01.png);
+  background-size: 80px;
+}
+
+#art2 {
+  background-image: url(../assets/02.png);
+  background-size: 80px;
+}
+
+#art3 {
+  background-image: url(../assets/03.png);
+  background-size: 80px;
+}
+
+#art4 {
+  background-image: url(../assets/04.png);
+  background-size: 80px;
+}
+
+#art5 {
+  background-image: url(../assets/05.png);
+  background-size: 80px;
+}
+
+#art6 {
+  background-image: url(../assets/06.png);
+  background-size: 80px;
+}
+
+#art7 {
+  background-image: url(../assets/07.png);
+  background-size: 80px;
+}
+
+#art8 {
+  background-image: url(../assets/08.png);
+  background-size: 80px;
+}

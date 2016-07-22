@@ -17,6 +17,28 @@ svg {
   display: block;
 }
 
+<<<<<<< HEAD
+=======
+.logowrapjs {
+  width: 50%;
+  margin-left: 50px;
+  padding-left: 50px;
+  float:left;
+}
+
+.slider {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  float: left;
+}
+
+.slider input{
+  display: block;
+  margin: 20px auto;
+}
+
+>>>>>>> gh-pages
 /* --------------------------
   Keyframes
 --------------------------- */

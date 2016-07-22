@@ -34,7 +34,7 @@ function render() {
 
 if (sliderSmallBoxWidth >= 355) {
   $("#scene").show(1000);
-  $("#list").show(1000);
+  $("#list").fadeIn(1000);
   $("#drawing").hide();
 } else {
   $("#drawing").html(renderHTML);
